@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
-const { devSkill } = require("../models/DeveloperSkillsSchema");
-const { devModel } = require("../models/DevelopersSchema");
+// const { devSkill } = require("../models/DeveloperSkillsSchema");
+// const { devModel } = require("../models/DevelopersSchema");
 // const { devModel } = require("../models/DeveloperSkillsSchema");
 // const { devSkill } = require("../models/DevelopersSchema");
-// const devModel = require("../models/DevelopersSchema");
-// const devSkillModel = require("../models/DeveloperSkillsSchema");
+const devModel = require("../models/DevelopersSchema");
+const devSkill = require("../models/DeveloperSkillsSchema");
 const {
   fetchAllDevelopers,
   addDev,

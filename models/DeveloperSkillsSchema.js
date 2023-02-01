@@ -8,7 +8,8 @@ let DeveloperSkill = new Schema({
   secondary_skills: String,
 });
 
-const devSkill = mongoose.model("DeveloperSkill", DeveloperSkill);
-module.exports = { devSkill };
+module.exports = mongoose.model("DeveloperSkill", DeveloperSkill);
+// const devSkill = mongoose.model("DeveloperSkill", DeveloperSkill);
+// module.exports = { devSkill };
 
 // id, Title, Author, Publisher, Date of Publish, Price, ISBN Number

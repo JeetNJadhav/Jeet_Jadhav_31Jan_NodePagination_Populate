@@ -1,6 +1,6 @@
-// const devModel = require("../models/DevelopersSchema");
+const devModel = require("../models/DevelopersSchema");
 // const { devModel } = require("../models/DeveloperSkillsSchema");
-const { devModel } = require("../models/DevelopersSchema");
+// const { devModel } = require("../models/DevelopersSchema");
 const { generateToken } = require("../tokenManagement/TokenManagement");
 
 const fetchAllDevelopers = async () => {

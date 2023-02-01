@@ -15,7 +15,8 @@ let Developer = new Schema({
   },
 });
 
-const devModel = mongoose.model("Developer", Developer);
-module.exports = { devModel };
+module.exports = mongoose.model("Developer", Developer);
+// const devModel = mongoose.model("Developer", Developer);
+// module.exports = { devModel };
 
 // id, Title, Author, Publisher, Date of Publish, Price, ISBN Number
