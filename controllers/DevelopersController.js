@@ -3,6 +3,7 @@ const devModel = require("../models/DevelopersSchema");
 const { fetchAllDevelopers, addDev } = require("../services/DeveloperServices");
 
 const fetchDevelopers = async (req, res) => {
+  console.log("req-->", req.querry);
   const devs = await fetchAllDevelopers();
 
   return res.status(200).json({

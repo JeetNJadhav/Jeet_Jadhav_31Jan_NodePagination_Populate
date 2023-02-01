@@ -3,7 +3,9 @@ const { generateToken } = require("../tokenManagement/TokenManagement");
 
 const fetchAllDevelopers = async () => {
   let data = await devModel
-    .find({})
+    .find()
+    .skip(0)
+    .limit(2)
     .then((result) => {
       return result;
     })
@@ -12,7 +14,7 @@ const fetchAllDevelopers = async () => {
     });
 
   let token = generateToken(data);
-  console.log("TOKEN-->", token);
+
   // returning data along with generated token
   return { token, data };
 };

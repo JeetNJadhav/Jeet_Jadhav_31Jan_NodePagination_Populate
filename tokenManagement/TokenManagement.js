@@ -12,7 +12,7 @@ const checkdev = (req, res, next) => {
       console.log(err);
       return res.status(400).send({ message: "Token Expired!" });
     } else {
-      console.log("tokenData-->", data);
+      // console.log("tokenData-->", data);
     }
     next();
   });
